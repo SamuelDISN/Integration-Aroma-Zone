@@ -1,0 +1,1113 @@
+/*
+Reset
+*/
+
+/* Supression des margin et padding  */
+    *{
+        padding:0;
+        margin:0;
+        list-style-type: none;
+
+/*Intégrer les paddings et les borders dans le bloc*/
+    -moz-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; /*CSS3*/
+    }
+
+/*Passer d'une base 16 à une base 10 (pixels). En effet 1 rem = 10 px  */
+    html{
+        width: 1445px;
+        height:1600px;
+        font-size:62,5%;
+    }
+
+
+    body{
+        width:1445px;
+        height:1600;
+        font-size: 1.6rem;
+        font-family:'Futura PT';
+        background-color:#DCEFD3;
+    }
+
+    main{
+        width:1445px;
+        height:1600px;
+    }
+
+    a{
+        color:inherit;
+    }
+    
+    a:not([target="_blank"]){
+        text-decoration: none;
+    }
+
+    img{
+        max-width:100%;
+    }
+
+/**/
+
+.isBanner{
+    position:absolute;
+    top:0px;
+    left:0px;
+    height: 55px;
+    width: 1445px;
+    margin-right: 0px;
+    background-color: #175732;
+}
+
+.isBanner .isLogoAromaZone {
+    position:absolute;
+    left:35px;
+    top:20px;
+}
+
+.isBanner .isTextAromaZone
+{
+    font-size: 23px;
+    font-weight:400;
+    color:white;
+}
+
+.isBanner h1{
+    width:200px;
+    font-size:22px;
+    font-weight:600; 
+    position:relative;
+    left:73px;
+    top:20px;
+    display:block;
+    height:22px;
+    line-height:22px;
+}
+
+.isBanner .isSearchBanner{
+    height:40px;
+    width:880px;
+    position: absolute;
+    top:14px;
+    left:272px;
+
+}
+.isBanner .isSearchBanner .isInputSearch {
+    position:relative;
+    top:-6px;
+    left:0px;
+    height:37px;
+    width:870px;
+    border:none;
+    border-radius:12px;
+}
+
+.isBanner .isSearchBanner .isButtonSearch {
+    position:relative;
+    top:-43px;
+    left:670px;
+    height:37px;
+    width:204px;
+    border:none;
+    border-radius:12px;
+    background-color: #3B5449;
+}
+
+#isBasketMenu ul {
+    margin-top:-12px;
+    list-style-type:none;
+}
+
+#isBasketMenu li {
+    font-size:13px;
+    height:30px;
+    float:right;
+    margin-top:0px;
+    padding:0px;
+
+}
+
+#isBasketMenu li a {
+    display:inline-block;
+    padding:15px;
+    color:white;
+}
+
+#isBasketMenu li a:hover {
+    color:#FFD700;
+}
+
+#isBasketMenu ul li ul {
+    display:none;
+}
+
+#isBasketMenu ul li:hover ul {
+    display:block;
+}
+
+#isBasketMenu li:hover ul li {
+    float:none;
+}
+
+#isBasketMenu li ul {
+    position:absolute;
+}
+
+/* ****************Modal******************** */
+
+.isContainerModalDropdown {
+    height:730px;
+    width:400px;
+    border: 1px solid black;
+    background-color:#EFEFEF;
+}
+
+.isContainerModalProduct{
+    height:80px;
+    width: 315px;
+    margin-top:0px;
+}
+
+.isImgAbsoluteOil{
+    margin:10px;
+}
+
+.isContainerModalDescription{
+    height:100px;
+    width:315px;
+    margin-left:20px;
+    position:relative;
+    top:-74px;
+    left:72px;
+
+
+}
+
+.isTextModalPrice{
+    font-size:11px;
+    font-weight:600;
+    padding-bottom:10px;
+    text-align:left;
+}
+
+.isImgTrashModal{
+    float:right;
+    margin-right:20px;
+}
+
+.isTextModalDescriptionProduct{
+    font-size:11px;
+    padding-bottom:10px;
+    text-align:left;
+}
+
+.isInputModalQty input{
+    height:15px;
+    width:26px;
+}
+
+.isModalAddFavorite{
+    padding-top:15px;
+}
+
+.isLineModal{
+    height: 399px;
+    border-right: 1px solid black; 
+    transform: rotate(90deg);
+    position:relative;
+    top:-350px;
+    left:-50px;
+    opacity:0.6;
+
+}
+/* ************Following******************** */
+.isContainerModalProductFollowing{
+    height:80px;
+    width: 315px;
+    margin-top:-50px;
+}
+
+.isContainerModalProductFollowing .isImgAbsoluteOil{
+    margin:10px;
+}
+
+.isContainerModalProductFollowing .isContainerModalDescription{
+    height:100px;
+    width:315px;
+    margin-left:20px;
+    position:relative;
+    top:-74px;
+    left:72px;
+}
+
+.isContainerModalProductFollowing .isTextModalPrice{
+    font-size:11px;
+    font-weight:600;
+    padding-bottom:10px;
+    text-align:left;
+}
+
+.isContainerModalProductFollowing .isTextModalDescriptionProduct{
+    font-size:11px;
+    padding-bottom:10px;
+    text-align:left;
+}
+
+.isContainerModalProductFollowing .isInputModalQty input{
+    height:15px;
+    width:26px;
+}
+
+.isContainerModalProductFollowing .isModalAddFavorite{
+    padding-top:15px;
+}
+
+.isContainerModalProductFollowing .isLineModal{
+    height: 399px;
+    border-right: 1px solid black; 
+    transform: rotate(90deg);
+    position:relative;
+    top:-350px;
+    left:-50px;
+    opacity:0.6;
+}
+
+.isModalTextSubTotal{
+    font-size:12px;
+    font-weight:700;
+    float:left;
+    margin-top:-50px;
+    margin-left:20px;
+}
+
+.isModalTextPriceSubTotal
+{
+    font-size:12px;
+    float:right;
+    margin-top:-50px;
+    margin-right:-40px;
+
+}
+
+.isButtonModalPayment {
+    position:relative;
+    top:-15px;
+    left:50px;
+    background-color:blue;
+
+}
+
+.isButtonModalSeeBasket{
+    height:23px;
+    width:146px;
+    float:left;
+    margin-left:-25px;
+    border:none;
+    border-radius:12px;
+    color:white;
+    background-color:#8DA784;
+}
+
+.isButtonModalPaymentBasket{
+    height:23px;
+    width:146px;
+    float:right;
+    /* margin-right:10px; */
+    border:none;
+    border-radius:12px;
+    color:white;
+    background-color:#175732;
+}
+
+
+.isInputButtonModalPromotion{
+    margin-top:10px;
+    margin-right:15px;
+    margin-left:10px;
+    position:relative;
+    top:0px;
+    left:30px;
+
+}
+
+.isInputButtonModalPromotion .isInputModalPromotion{
+    height:41px;
+    width:260px;
+}
+
+.isInputButtonModalPromotion .isButtonAddPromotion{
+    height:41px;
+    width:74px;
+    font-size:12px;
+    font-weight:600;
+    border:1px solid black;
+    position:relative;
+    top:-41px;
+    left:243px;
+    background-color:white;
+}
+
+.isImgModalShip{
+    margin-left:40px;
+
+}
+
+.isTextModalMoreInf{
+    margin-left:140px;
+    
+}
+
+.isTextModalMoreInf a {
+    text-decoration: underline;
+    font-weight:600;
+    margin-left:-15px;
+    color:black;
+
+}
+
+/* ************************************ */
+
+.isContainerNav{
+    height: 45px;
+    width:880px;
+    position:relative;
+    top:55px;
+    left:273px;
+    background-color: #3B5449;
+}
+
+.isContainerNav .isLink{
+font-size:13px;
+position:relative;
+top:0px;
+left:0px;
+right:0px;
+padding-top:5px;
+padding-bottom:5px;
+padding-right:15px;
+margin-right:0px;
+margin-left:40px;
+text-transform: uppercase;
+color:white;
+
+}
+
+.isDevelopment {
+    display:inline-block;
+    margin-right:273px;
+    margin-left:273px;
+    background-color:#DCEDD6;
+
+
+
+}
+.isDevelopment .isHeaderBanner {
+    height: 50px;
+    width: 880px;
+    position:relative;
+    top:101px;
+    left:0px;
+    margin-bottom:0px;
+    text-transform:uppercase;
+    border: 1px solid grey;
+    border-top:none;
+    background-color: #B0C4A9;
+
+
+
+}
+
+.isDevelopment .isHeaderBanner .isArianneNav{
+    font-size: 13px;
+    height:46px;
+    width:879px;
+    border-top: 1px solid grey;
+    border-right:1px solid grey;
+    border-bottom:none;
+    border-left:1px solid grey;
+    position:relative;
+    top:-46px;
+    left:0px;
+    padding-bottom:0px;
+    padding-top:0px;
+    background-color:#B0C4A9;
+}
+
+.isDevelopment .isHeaderBanner h2{
+
+    font-size: 20px;
+    font-weight:600;
+    position:relative;
+    top:-55px;
+    left:0px;
+    margin-top:25px;
+    background-color:#B0C4A9;
+    /* font-weight:medium; */
+
+}
+
+.isDevelopment .isContainerProduct{
+    height:380px;
+    width:665px;
+    position:relative;
+    top:100px;
+    left:0px;
+}
+
+.isDevelopment .isContainerProduct .isImgBox {
+
+
+    height:300px ;
+    width:310px;
+    margin-top:0px;
+    margin-left: 0px;
+    padding-top:0px;
+
+}
+
+.isDevelopment .isContainerProduct .isContainerProductsFeeds {
+
+    height:80px;
+    width:310px;
+    position:relative;
+    top:0px;
+    left:0px;
+    margin-left:0px;
+    padding-left:25px;
+    padding-right:25px;
+
+}
+
+.isDevelopment .isContainerProduct .isContainerProductDescription{
+    position:relative;
+    top:-380px;
+    left:310px;
+    height:355px;
+    width:355px;
+    margin-top:25px;
+    margin-bottom:0px;
+
+
+}
+
+.isDevelopment .isContainerProduct .isContainerProductDescription .isRateGlobalProduct {
+    color:orange;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.isDevelopment .isContainerProduct .isContainerProductDescription .isRateGlobalProductLoose {
+   color:#aaa;
+   text-decoration: none;
+   font-size:1em;
+
+}
+
+.isDevelopment .isContainerProduct .isContainerProductDescription .isTextShipping{
+    font-size:18px;
+    margin-top:5px;
+    margin-bottom:40px;
+
+
+}
+
+.isDevelopment .isContainerProduct .isContainerProductDescription .isDescriptionProduct{
+    height:250px;
+    width:355px;
+
+}
+.isDevelopment .isContainerProduct .isContainerProductDescription .isDescriptionProduct .isLineDescription{ 
+    height: 340px;
+    padding-right: 60px;
+    border-right: 1px solid black; 
+    transform: rotate(90deg);
+    position:relative;
+    top:-340px;
+    left:0px;
+    opacity:0.6;
+    }
+
+.isDevelopment .isContainerProduct .isContainerProductDescription .isDescriptionProduct .isTextDescriptionInf{
+    font-size:18px;
+    font-weight:600;
+    position:relative;
+    top:-325px;
+    left:0px;
+
+}
+
+.isDevelopment .isContainerProduct .isContainerProductDescription .isDescriptionProduct .isTextDescriptionProductStart{
+    font-size:16px;
+    margin-bottom:20px;
+
+}
+.isDevelopment .isContainerProduct .isContainerProductDescription .isDescriptionProduct .isTextDescriptionProductEnd{
+    font-size:16px;
+    margin-bottom:20px;
+    position:relative;
+    top:-300px;
+    left:0px;
+}
+
+.isDevelopment .isContainerProduct .isContainerProductPayment{
+    height:391px;
+    width:215px;
+    font-size:16px;
+    text-align:center;
+    border: 1px solid grey;
+    box-shadow: 3px 3px 3px grey initial;
+    position:relative;
+    top:-380px;
+    right:-355px;
+    padding-top:40px;
+    background-color:#B0C4A9;
+
+}
+
+.isDevelopment .isContainerProduct .isContainerProductPayment .isTextPrice {
+    font-size:28px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.isDevelopment .isContainerProduct .isContainerProductPayment #isCircleContainer{
+    background:transparent;
+    font-size:14px;
+    border-radius:50%;
+    width:45px;
+    height:45px;
+    padding:10px;
+    margin-right:5px;
+    margin-left:5px;
+    border:1px solid grey; 
+}
+
+.isDevelopment .isContainerProduct .isContainerProductPayment #isCircleContainer:hover,
+.isDevelopment .isContainerProduct .isContainerProductPayment #isCircleContainer:focus{
+    font-size:1.2em;
+    cursor:pointer;
+    border: 2px solid #175732;
+    color:white;
+    background-color:#175732;
+}
+
+
+.isDevelopment .isContainerProduct .isContainerProductPayment .isTextSubTotal{
+    font-size:13px;
+    font-weight:600;
+    width:80px;
+    margin-top:40px;
+    margin-right:20px;
+    margin-left:15px;
+    text-align:left;
+}
+
+.isDevelopment .isContainerProduct .isContainerProductPayment .isTextPriceSubTotal{
+    font-size:13px;
+    position:relative;
+    top:-20px;
+    right:-85px;
+    margin-right:20px;
+
+}
+
+.isDevelopment .isContainerProduct .isContainerProductPayment .isInputPaymentMore{
+    height:32px;
+    width:32px;
+    border:1px solid black;
+    margin-top:20px;
+    margin-right:-5px;
+    background-color:white;
+}
+
+.isDevelopment .isContainerProduct .isContainerProductPayment .isInputPaymentValue{
+    height:32px;
+    width:100px;
+    text-align:center;
+    border:1px solid black;
+    background-color:white;
+}
+
+.isDevelopment .isContainerProduct .isContainerProductPayment .isInputPaymentLess{
+    height:32px;
+    width:32px;
+    border:1px solid black;
+    margin-left:-5px;
+    background-color:white;
+}
+
+.isDevelopment .isContainerProduct .isContainerProductPayment .isTextSendShip{
+    width:110px;
+    text-align:left;
+    margin-top:30px;
+    margin-right:0px;
+    margin-left:15px;
+
+}
+
+.isDevelopment .isContainerProduct .isContainerProductPayment .isTextSendShipTiming{
+    font-weight:600;
+    width:80px;
+    position:relative;
+    top:-21px;
+    right:-70px;
+    margin-right:20px;
+
+}
+
+.isDevelopment .isContainerProduct .isContainerProductPayment .isAddBasketButton {
+    height:30px;
+    width:170px;
+    margin-top:5px;
+    margin-right:15px;
+    margin-left:15px;
+    border:none;
+    border-radius:12px;
+    color:white;
+    background-color:#175732;
+}
+
+.isDevelopment .isContainerProduct .isContainerProductPayment .isTextPaymentFooter{
+    text-align:left;
+    font-size:12px;
+    width:110px;
+    margin-top:10px;
+    margin-right:15px;
+    margin-left:15px;
+
+}
+
+.isDevelopment .isContainerProduct .isContainerProductPayment .isImgPaymentFooter{
+    position:relative;
+    top:-21px;
+    right:-60px;
+    margin-top:0px;
+    margin-right:15px;
+    margin-left:15px;
+}
+
+.isDevelopment .isOpinionContainer {
+
+    height:465px;
+    width:880px;
+    position:relative;
+    top:100px;
+    left:0px;
+
+
+}
+
+.isDevelopment .isOpinionContainer .isContainerNavDevelopment {
+    margin-top:10px;
+    display:block; 
+    height:33px;
+    line-height:33px;
+}
+
+.isDevelopment .isOpinionContainer .isContainerLogoAndText{
+    display:inline;
+    padding-right:26.35px;
+    padding-left:26.35px;
+    border:1px solid grey;
+    background-color:#B0C4A9;
+}
+
+.isDevelopment .isOpinionContainer .isNavDevelopmentContent{
+    font-size:14px;
+    margin-right:5px;
+    margin-left:5px;
+
+}
+
+.isDevelopment .isOpinionContainer .isContainerLogoAndTextFocus{
+    display:inline;
+    font-weight:bolder;
+    padding-right:20px;
+    padding-left:20px;
+    border:1px solid grey;
+    border-bottom:none;
+    color:black;
+    background-color:#8DA784;
+}
+
+.isDevelopment .isOpinionContainer .isNavDevelopmentFocus{
+    font-size:15px;
+    font-weight:600;
+    padding-top:10px;
+    padding-right:36px;
+    padding-bottom:0px;
+    padding-left:40px;
+
+}
+
+.isDevelopment .isOpinionContainer .isContainerHeaderOpinion
+{
+    height:80px;
+    width:880px; 
+    border: 1px solid grey;
+    border-top:none;
+    background-color:#8DA784;
+}
+
+.isDevelopment .isOpinionContainer .isContainerHeaderOpinion .isLogoAromaZone{
+    position:relative;
+    top:25px;
+}
+
+.isDevelopment .isOpinionContainer .isContainerHeaderOpinion h2 {
+
+    display:inline;
+    font-size:19px;
+    font-weight:600;
+    text-transform: uppercase;
+    position:relative;
+    top:20px;
+}
+
+
+.isDevelopment .isOpinionContainer .isOpinionRate{
+    height:350px;
+    width:320px;
+    text-align:center;
+}
+
+.isDevelopment .isOpinionContainer .isOpinionRate .isRate {
+    font-size:28px;
+    font-weight:600;
+    padding-top:15px;
+    padding-bottom:15px;
+}
+
+.isDevelopment .isOpinionContainer .isOpinionRate .isGlobalRateOpinion{
+    color:orange;
+    font-size:1.1em;
+}
+
+.isDevelopment .isOpinionContainer .isOpinionRate .isGlobalRateOpinionLoose{
+    color:#aaa;
+    font-size:1.1em;
+}
+
+.isDevelopment .isOpinionContainer .isOpinionRate .isGlobalOpinion{
+    font-size:15px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.isDevelopment .isOpinionContainer .isOpinionRate .isContainerOpinionClient{
+    height:30px;
+    width:290px;
+    font-size:12px;
+    font-weight:bolder;
+    height:30px;
+    line-height:30px;
+    margin-top:5px;
+    margin-left:15px;
+    margin-left:15px;
+    background-color:#97B58C;
+}
+
+.isDevelopment .isOpinionContainer .isOpinionRate .isContainerRatingByClient {
+    font-size:12px;
+}
+
+.isDevelopment .isOpinionContainer .isOpinionRate .isContainerRatingByClient .isContainerLevelRating5,
+.isDevelopment .isOpinionContainer .isOpinionRate .isContainerRatingByClient .isContainerLevelRating4,
+.isDevelopment .isOpinionContainer .isOpinionRate .isContainerRatingByClient .isContainerLevelRating3,
+.isDevelopment .isOpinionContainer .isOpinionRate .isContainerRatingByClient .isContainerLevelRating2,
+.isDevelopment .isOpinionContainer .isOpinionRate .isContainerRatingByClient .isContainerLevelRating1
+{
+    float:left;
+    margin-top:15px;
+    margin-right:30px;
+    margin-left:30px;
+}
+
+/* Sens and aesthetic*/
+.isDevelopment .isOpinionContainer .isOpinionRate .isContainerRatingByClient .isRatingLevel a{
+    color:#aaa;
+    text-decoration: none;
+    font-size: 1.25em;
+    transition: color .4s;
+}
+
+/* Selector stars */
+.isDevelopment .isOpinionContainer .isOpinionRate .isContainerRatingByClient .isContainerLevelRating5 .isRatingLevel a:hover,
+.isDevelopment .isOpinionContainer .isOpinionRate .isContainerRatingByClient .isContainerLevelRating5 .isRatingLevel a:focus,
+.isDevelopment .isOpinionContainer .isOpinionRate .isContainerRatingByClient .isContainerLevelRating5 .isRatingLevel a:hover ~ a, 
+.isDevelopment .isOpinionContainer .isOpinionRate .isContainerRatingByClient .isContainerLevelRating5 .isRatingLevel a:focus ~ a
+{
+    color: orange;
+    cursor: pointer;
+}
+
+.isDevelopment .isOpinionContainer .isOpinionRate .isContainerRatingByClient .isContainerLevelRating5 #isRatingLevel5:target
+{
+    color:orange;
+    cursor:pointer;
+    font-size:1.25em;
+}
+
+.isDevelopment .isOpinionContainer .isOpinionRate .isContainerRatingByClient .isContainerLevelRating4 .isRatingLevel a:hover,
+.isDevelopment .isOpinionContainer .isOpinionRate .isContainerRatingByClient .isContainerLevelRating4 .isRatingLevel a:focus,
+.isDevelopment .isOpinionContainer .isOpinionRate .isContainerRatingByClient .isContainerLevelRating4 .isRatingLevel a:hover ~ a, 
+.isDevelopment .isOpinionContainer .isOpinionRate .isContainerRatingByClient .isContainerLevelRating4 .isRatingLevel a:focus ~ a
+{
+    color: orange;
+    cursor: pointer;
+}
+
+.isDevelopment .isOpinionContainer .isOpinionRate .isContainerRatingByClient .isContainerLevelRating4 #isRatingLevel4:target
+{
+    color:orange;
+    cursor:pointer;
+    font-size:1.25em;
+}
+
+.isDevelopment .isOpinionContainer .isOpinionRate .isContainerRatingByClient .isContainerLevelRating3 .isRatingLevel a:hover,
+.isDevelopment .isOpinionContainer .isOpinionRate .isContainerRatingByClient .isContainerLevelRating3 .isRatingLevel a:focus,
+.isDevelopment .isOpinionContainer .isOpinionRate .isContainerRatingByClient .isContainerLevelRating3 .isRatingLevel a:hover ~ a, 
+.isDevelopment .isOpinionContainer .isOpinionRate .isContainerRatingByClient .isContainerLevelRating3 .isRatingLevel a:focus ~ a {
+    color: orange;
+    cursor: pointer;
+}
+
+
+.isDevelopment .isOpinionContainer .isOpinionRate .isContainerRatingByClient .isContainerLevelRating3 #isRatingLevel3:target{
+    color:orange;
+    cursor:pointer;
+    font-size:1.25em;
+}
+
+.isDevelopment .isOpinionContainer .isOpinionRate .isContainerRatingByClient .isContainerLevelRating2 .isRatingLevel a:hover,
+.isDevelopment .isOpinionContainer .isOpinionRate .isContainerRatingByClient .isContainerLevelRating2 .isRatingLevel a:focus,
+.isDevelopment .isOpinionContainer .isOpinionRate .isContainerRatingByClient .isContainerLevelRating2 .isRatingLevel a:hover ~ a, 
+.isDevelopment .isOpinionContainer .isOpinionRate .isContainerRatingByClient .isContainerLevelRating2 .isRatingLevel a:focus ~ a {
+    color: orange;
+    cursor: pointer;
+}
+
+
+.isDevelopment .isOpinionContainer .isOpinionRate .isContainerRatingByClient .isContainerLevelRating2 #isRatingLevel2:target{
+    color:orange;
+    cursor:pointer;
+    font-size:1.25em;
+}
+
+.isDevelopment .isOpinionContainer .isOpinionRate .isContainerRatingByClient .isContainerLevelRating1 .isRatingLevel a:hover,
+.isDevelopment .isOpinionContainer .isOpinionRate .isContainerRatingByClient .isContainerLevelRating1 .isRatingLevel a:focus,
+.isDevelopment .isOpinionContainer .isOpinionRate .isContainerRatingByClient .isContainerLevelRating1 .isRatingLevel a:hover ~ a, 
+.isDevelopment .isOpinionContainer .isOpinionRate .isContainerRatingByClient .isContainerLevelRating1 .isRatingLevel a:focus ~ a {
+    color: orange;
+    cursor: pointer;
+}
+
+
+.isDevelopment .isOpinionContainer .isOpinionRate .isContainerRatingByClient .isContainerLevelRating1 #isRatingLevel1:target{
+    color:orange;
+    cursor:pointer;
+    font-size:1.25em;
+}
+
+
+
+.isDevelopment .isOpinionContainer .isVerticalLineOpinion{
+
+    display:block;
+    width:5px;
+    border-left:1px solid black;
+    height:350px;
+    opacity:0.7;
+    position:relative;
+    top:-350px;
+    left:320px;
+
+}
+
+.isDevelopment .isOpinionContainer .isContainerGlobalClientFeedBack {
+
+    height:350px;
+    width:555px;
+    font-size:13px;
+    position:relative;
+    top:-700px;
+    left:325px;
+
+}
+
+.isDevelopment .isOpinionContainer .isContainerGlobalClientFeedBack .isTextHeaderDvlpOpinion{
+    padding-top:20px;
+    font-size:14px;
+    font-weight:medium;
+
+}
+.isDevelopment .isOpinionContainer .isContainerGlobalClientFeedBack .isContainerClientFeedBack {
+    margin-top:30px;
+}
+.isDevelopment .isOpinionContainer .isContainerGlobalClientFeedBack .isContainerClientFeedBack .isRateOpinionClient {
+    color:orange;
+    text-decoration: none;
+    font-size: 0.8em;
+ }
+
+ .isDevelopment .isOpinionContainer .isContainerGlobalClientFeedBack .isContainerClientFeedBack .isRateOpinionLoose {
+    color:#aaa;
+    text-decoration: none;
+    font-size:0.8em;
+    margin-right:5px;
+
+}
+
+.isDevelopment .isOpinionContainer .isContainerGlobalClientFeedBack .isTextDate{
+    float:right;
+}
+
+.isDevelopment .isOpinionContainer .isContainerClientFeedBack .isHorizontalLineOpinion {
+    opacity:0.6;
+    padding-top:3px;
+    padding-bottom:3px;
+}
+.isDevelopment .isOpinionContainer .isContainerGlobalClientFeedBack .isContainerClientFeedBack .isTextComment{
+    float:left;
+    margin-bottom:13px;
+
+}
+
+.isDevelopment .isOpinionContainer .isContainerMoreOpinion{
+    height:20px;
+    width:550px;
+    font-size:13px;
+    text-align:center;
+    margin-top:40px;
+    margin-right:3px;
+    margin-left:3px;
+    background-color:#97B58C;
+}
+
+.isDevelopment .isContainerFooter{
+    height:510px;
+    width:880px;
+    border:1px solid grey;
+    position:relative;
+    top:110px;
+    left:0px;
+    background-color:#B0C4A9;
+
+}
+
+.isDevelopment .isContainerFooter .isBannerFooter{
+    height:55px;
+    width:880px;
+    border-bottom: 1px solid grey;
+    background-color:#97B58C;
+
+}
+
+.isDevelopment .isContainerFooter .isBannerFooter .isOurSocialConnexion{
+    position:relative;
+    top:-25px;
+    left:425px;
+}
+
+.isDevelopment .isContainerFooter .isBannerFooter .isTextSocialConnexion{
+    font-size:22px;
+    font-weight:600;
+    text-transform:uppercase;
+    position: relative;
+    top:15px;
+    left:-175px;
+    color:white;
+}
+
+
+.isDevelopment .isContainerFooter .navigation .isNav{
+    display:inline-block;
+}
+
+
+.isDevelopment .isContainerFooter .navigation .isNav .isTitle{
+    font-weight: 500;
+    font-size: 24px;
+    text-align:center;
+    margin-top:20px;
+    margin-right:50px;
+    margin-bottom:20px;
+    margin-left:50px;
+    text-transform:uppercase;
+    color:white;
+}
+
+.isDevelopment .isContainerFooter .navigation .isNav a{
+    display:block;
+    font-size:13px;
+    font-weight:lighter;
+    text-align: left;
+    margin-top:5px;
+    margin-right:50px;
+    margin-bottom:5px;
+    margin-left:50px;
+    color:white;
+}
+
+.isDevelopment .isContainerFooter .isTextTitleLog{
+    display:inline-block;
+    font-size:24px;
+    font-weight:500;
+    text-transform:uppercase;
+    margin-top:20px;
+    margin-left:50px;
+    color:white;
+}
+
+.isDevelopment .isContainerFooter .isTextDescriptionLog{
+    display:inline-block;
+    font-size:20px;
+    font-weight:lighter;
+    margin-left:50px;
+    color:white;
+}
+
+.isDevelopment .isContainerFooter .isSubFooter{
+    text-align:center;
+    height:120px;
+    width:880px;
+
+}
+
+.isDevelopment .isContainerFooter .isSubFooter .isInputFooter{
+    height:37px;
+    width:665px;
+    border:none;
+    border-radius:12px;
+    position:relative;
+    top:-140px;
+    left:0px;
+
+}
+.isDevelopment .isContainerFooter .isSubFooter .isButtonSubscription{
+    height:37px;
+    width:204px;
+    border:none;
+    border-radius:12px;
+    position:relative;
+    top:-177px;
+    left:245px;
+    background-color: #3B5449;
+}
+
+.isDevelopment .isContainerFooter .isTextCopyright{
+    font-size:12px;
+    text-align:left;
+    position:relative;
+    top:0px;
+    left:-150px;
+
+}
+
+.isDevelopment .isContainerFooter .isImgPaymentMethod{
+
+    position:relative;
+    top:0px;
+    left:455px;
+}
